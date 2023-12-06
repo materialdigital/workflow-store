@@ -1,6 +1,6 @@
 title: MaterialDigital Workflow Store
 description: ""
-theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
 
 baseurl: "/workflow-store"
 url: "https://materialdigital.github.io"
