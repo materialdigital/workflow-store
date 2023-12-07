@@ -2,6 +2,7 @@
 title: Versioning
 layout: default
 nav_order: 3
+parent: Additional Considerations
 ---
 
 ## Choose proper version numbers:
