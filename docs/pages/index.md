@@ -7,7 +7,6 @@ nav_order: 1
 
 # How do I upload to the Workflow Store?
 
-[toc]
 
 ## Introduction
 
