@@ -3,33 +3,77 @@ title: Home
 layout: home
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# How do I upload to the Workflow Store?
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+[toc]
 
-More specifically, the created site:
+## Introduction
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+The Workflow Store provides a place to share your science with others! Upload and share the code that can be used to reproduce some or all of your research. **They can be works in progress!**
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+## Quick start Guide
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+> **Note:** Most of the instructions below link to  formats, concepts, or standards for GitHub, which should work in a similar/identical form for GitLab.
 
-To get started with creating a site, simply:
+### 1. Put your code in version control
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+Make sure your code is under version control and stored in a registry such as GitHub or a GitLab instance.
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+Create a new repository (e.g. on [GitHub](https://github.com/new)). Ensure `initialize the repository with a Readme` is deselected and follow the instructions applicable to your situation. For example, you may want to upload an existing directory.
+### 2. Add meta information
 
-----
+Add a `meta.json` for the [PMD Workflow Store](https://workflows.material-digital.de/). You can also use a [web form](https://json-editor.github.io/json-editor/?data=N4Ig9gDgLglmB2BnEAuUBXRBTA+vAhgLa75RQBOMARulFsihelgDQgTliHQ5VYBmYcrgAmWADZY6qJqxCZRA/OnFQcAN3zjmDWW0L4AHjjHQAFqgAMbGmQQ5EUUrkJgxqAIxsAxvmwOsJBhYdVwOSCxyKABPAPxybwtGcmY2GG8EcWpUEEF4JwB3ei4sAFYQNjAqACssbzVxfGiwWhz4IQNxCpBERKwDVFAAEl6zfvwcszIIFAB6WerEBABaUfGAOiEAc1mRcnx+KGXLABZZtYMAYm7YKEkcgAUAWQARAAIAdSEAa35xMAKbyeUnwIlIEzYMQgWByVVq9W6wgAjugYMIRKgANogW73NgFH5/AE4QLqNEIYj5bpiXqUaBweDdZRQMxCZBsYSSPwwtjfLDRAnkETIAC6bFBImCDK0D040KiMHoqH4WmwbHC8tgSrQOOC9x1UJhKB6FBg8C21Po3jpsAQOQAKmM3o0+OI3mB+G8WVg3oLfv8CutLSqVFAck9or7CQGQABffHR4mk8nwSlhg3RaE5RyUc3dQLoQhY9jRFPdADKMEI5ac3m+3TA3vIIDFIBp1pg9LtxsdPr9RMByc4qcCUBYbywwTG5DeAHIIKXh7P3TPZ5Xq7XvrOg/G21abQzBjjM0aTbmLWx2wfuyBe28r53bfB3Z7vVHyP6ATvxbRWeQGKAho5PE+zRN0wT9ABx5ZsaOZmhau6EGaACSdCEAwXh7rSj6HsaACCzowI4L5vMyf6IMuBDEIgpHwCI7pdgQbremiE4GDAboSsIiDYIg45YOsWzrOOmKznhv5CG8ADy8A+vgHgAAJYIYRAQJI6xiLO45iRJM72gSpEAExKSp3DqZpIrfiAnJYNyR5AbBpp5pe+44TeABqkSIAybxmoI5AGE+JFvjZ3JWXyApCMK9knsB5CgeBaFQQ5Z7wXG+goUlngudhjE5ARWTER6bwRYKwpvP5XpOv2AbjgY3zwb5UBvBAYA8dQkhemAbx8G8KKRIq9Fkvg0n5GA/xbNEVm+HQWxCIqyWxcaIFNIlkExTBqXOSABZFig2KkFwRGwN47IgBk+Rmughb5oY8pVqOWgNk2LaIZl60oNYWEdnl+GEUVnozVgc2UPQ/GCcJpFQEdjjpHxbwXbA8DXYQ/F3QNaZaFZjhYBAiCzBkNIbaeK1gWkWUZptcF5m98CoR9mEPr9IAFcdJE43jBNuGDE4Q+OAAyeFPE8DzluOLxC3h5YANLjr44jeCopA+cVEh+CdbyuCIKiYFZWTeIEvHE7CNR1GGGXwLKEQKtqX0SlKCAynKkRaotVNOQhOU/U++X3ukT7xJGBTTj6b4RTR8Sh06ED4HW+BbPQbwKPRZpVX2iYFOO+B0WnbyaNoieR7nGTxfQrV0Y1+uG6HJ7rG8ACifNvMA86Lggs4oLOABC5YvMsADMs6xkGLkhqoR4LmWxo933/dxruEDoFQ+vKwgbsk/Fq3kx9gFLVtnsgEhdMU19TM+8aUmMVo/3NcVi/L+kq9IG8nLOPR0O5zVX7pSAE1gMbjlzyWlyufEAl8A5uhjiyLquc/7BWqhnX0U5U4hVxm1YIQgprz13IgVkBQSTxTZDkM0dB9j1EPJCMYxAchUDAI2HM+AIAnHnkAA) to do so.
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+Sample `meta.json`:
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+```json
+{
+    "workflow_environment":"pyiron",
+    "title": "Exciting science experiment",
+    "authors": [
+        "John Doe <john.doe@science.com>",
+        "John Smith <john.smith@institute.edu>"
+    ],
+    "description": "Code to run new physics",
+    "release": "0.0.1",
+    "keywords": [
+        "workflow",
+        "simulation"
+    ],
+    "categories":[
+        "atomistics"
+    ]
+}
+```
+
+Full info on the file format [here](https://workflows.material-digital.de/info/).
+
+### 3. Add a README (optional)
+
+Add a Readme instructions/installation/tips/FAQs.-> section Readme
+
+
+### 4. Add a License (optional)
+
+If you care about proper software sharing, [choose a license](https://choosealicense.com/) and add a `LICENSE` file. 
+
+### 5. Add citation info (optional)
+#### Minimal format
+Citations can be added as a short section in  your Readme:
+
+> If you are using this workflow please cite:
+Author Name *et al.* (2023) *"Title of publication."* Journal [Vol], p1-10 DOI:..." 
+
+#### Citation File (optional)
+The prefered method to add citations is to include
+ a [`CREDENTIALS.cff` file](https://citation-file-format.github.io/) in your repository.
+
+### 6. Create a release/tag
+Commit all required files and create a release with an associated [release tag](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release)
+
+### 7. Upload to the Workflow Store
+
+1. Login to the [workflow Store](https://workflows.material-digital.de/)
+2. [Upload your workflow](https://workflows.material-digital.de/upload_workflow/)
+
+Detailed instructions including information on how to add private repositories are provided in the [upload workflow section]()
