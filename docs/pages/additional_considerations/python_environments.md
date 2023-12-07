@@ -2,6 +2,7 @@
 title: Python Environments
 layout: default
 nav_order: 5
+parent: Additional Considerations
 ---
 
 ## Exporting a Python Environment

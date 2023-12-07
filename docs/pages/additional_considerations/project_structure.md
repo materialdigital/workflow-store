@@ -2,6 +2,7 @@
 title: Project Structure
 layout: default
 nav_order: 6
+parent: Additional Considerations
 ---
 
 ## Project Structure:

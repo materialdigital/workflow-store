@@ -2,6 +2,7 @@
 title: Automated Releases
 layout: default
 nav_order: 8
+parent: Additional Considerations
 ---
 
 ## Release Workflow:

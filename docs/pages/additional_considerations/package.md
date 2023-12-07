@@ -2,6 +2,7 @@
 title: Code Packaging
 layout: default
 nav_order: 7
+parent: Additional Considerations
 ---
 
 ## Package Your Code:
