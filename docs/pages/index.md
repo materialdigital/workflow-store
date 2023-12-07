@@ -1,6 +1,8 @@
 ---
-title: Home
-layout: home
+title: QuickStart Guide
+layout: page
+permalink: /
+nav_order: 1
 ---
 
 # How do I upload to the Workflow Store?
