@@ -1,9 +1,0 @@
-title: MaterialDigital Workflow Store
-description: ""
-remote_theme: pmarsceill/just-the-docs
-
-baseurl: "/workflow-store"
-url: "https://materialdigital.github.io"
-
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
