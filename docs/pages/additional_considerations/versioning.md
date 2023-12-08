@@ -3,6 +3,7 @@ title: Versioning
 layout: default
 nav_order: 3
 parent: Additional Considerations
+grand_parent: Contributor QuickStart Guide
 ---
 
 ## Choose proper version numbers:

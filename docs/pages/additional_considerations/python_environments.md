@@ -3,6 +3,7 @@ title: Python Environments
 layout: default
 nav_order: 5
 parent: Additional Considerations
+grand_parent: Contributor QuickStart Guide
 ---
 
 ## Exporting a Python Environment
