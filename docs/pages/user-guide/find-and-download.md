@@ -7,7 +7,7 @@ parent: User Guide
 
 
 ### Login
-- log in on workflows.material-digital.de using your material-digital account
+- log in using your material-digital account
 
 ### Find and download workflows
 #### Using the website's UI
