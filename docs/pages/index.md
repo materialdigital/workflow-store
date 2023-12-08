@@ -1,5 +1,5 @@
 ---
-title: QuickStart Guide
+title: Contributor QuickStart Guide
 layout: page
 permalink: /
 nav_order: 1
