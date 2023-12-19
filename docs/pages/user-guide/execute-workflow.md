@@ -14,7 +14,7 @@ parent: User Guide
         3. usually, pyiron and it's dependencies should be installed in the environment creation process. For more a detailed instruction on how to install pyiron, we refer to the [pyiron documentation](https://pyiron.readthedocs.io/en/latest/source/installation.html).
         4. start a jupyter session, e.g. `jupyter lab`
         5. open the notebook `<workflowname>.ipynb` and execute the workflow (i.e. run the notebook cells).
-    - windows: use wsl or use [anacondaprompt](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html) and follow the Linux instructions to install conda. *It's strongly suggested to use wsl, as it will ensure you can use all of the following instructions & suggestions right away.*
+    - windows: use wsl or [anacondaprompt](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html). *It's strongly suggested to use wsl, as it will ensure you can use all of the following instructions & suggestions right away.* With wsl, follow the linux instructions from above. If you choose to use anacondaprompt, you already have access to a conda installation and may start from step 2 onward.
 
 #### simstack:
 - [install](https://simstack.readthedocs.io/en/latest/installation/index.html)
