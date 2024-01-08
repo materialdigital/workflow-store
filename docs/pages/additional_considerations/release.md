@@ -3,6 +3,7 @@ title: Automated Releases
 layout: default
 nav_order: 8
 parent: Additional Considerations
+grand_parent: Contributor QuickStart Guide
 ---
 
 ## Release Workflow:

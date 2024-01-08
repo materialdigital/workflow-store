@@ -3,6 +3,7 @@ title: Code Packaging
 layout: default
 nav_order: 7
 parent: Additional Considerations
+grand_parent: Contributor QuickStart Guide
 ---
 
 ## Package Your Code:
