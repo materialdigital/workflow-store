@@ -12,7 +12,7 @@ parent: User Guide
 ### Find and download workflows
 #### Using the website's UI
 - browse the inventory or use the search feature
-- select a workflow you are interested in. *Note that each workflow requires one of the workflow environments supported by the PMD: pyiron or simstack*
+- select a workflow you are interested in.
 - Click on download. You will recieve a zip-archive. Unpack it to your preferred destination.
 
 #### Using the API

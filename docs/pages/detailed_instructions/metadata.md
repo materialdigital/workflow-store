@@ -13,7 +13,7 @@ In order to register the workflow in the PMD workflow store, the file `meta.json
 | Key | Requirement | Description|
 |-----|------------|------------|
 | title | Mandatory | the Label of the workflow |
-| workflow_environment | Mandatory | "pyiron" or "SimStack" |
+| workflow_environment | Mandatory | e.g. "pyiron" or "SimStack" |
 | description | Mandatory | the description of the workflow |
 | keywords | Mandatory | a list of (self-chosen) keywords for the workflow |
 | categories | Optional | a list of (self-chosen) categories, e.g., atomistics, continuum, experimental |
@@ -24,7 +24,7 @@ A fully specified `meta.json` has the following format:
 ```json
 {
     "title": "Exciting science experiment",
-    "workflow_environment":"pyiron",
+    "workflow_environment": "pyiron",
     "description": "Code to run new physics",
     "keywords": [
         "workflow",
