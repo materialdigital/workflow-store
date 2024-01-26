@@ -6,20 +6,20 @@ parent: Additional Considerations
 grand_parent: Contributor QuickStart Guide
 ---
 
-## README.md:
+## README.md
 
 Write a comprehensive README.md file to provide an overview of your project. Include the following:
 
-    Title
-    Badges (e.g., Travis CI, Codecov)
-    Project description
-    Installation instructions
-    Usage examples
-    Citation information
-    Configuration options
-    Contribution guidelines
-    Code of conduct
-    License information
+- Title
+- Badges (e.g., Travis CI, Codecov)
+- Project description
+- Installation instructions
+- Usage examples
+- Configuration options
+- Citation information
+- Contribution guidelines
+- Code of conduct
+- License information
 
 Example README.md template:
 

@@ -48,12 +48,13 @@ Sample `meta.json`:
 }
 ```
 
-Full info on the file format [here](https://workflows.material-digital.de/info/).
+Full info on the file format [here](pages/detailed_instructions/metadata).
 
 ### 3. Add a README (optional)
 
-Add a Readme instructions/installation/tips/FAQs.-> section Readme
+Add a Readme with instructions and tips on setup and useage of your workflow.
 
+[Further suggestions on creating your Readme](pages/additional_considerations/readme)
 
 ### 4. Add a License (optional)
 
@@ -68,14 +69,14 @@ Author Name *et al.* (2023) *"Title of publication."* Journal [Vol], p1-10 DOI:.
 
 #### Citation File (optional)
 The prefered method to add citations is to include
- a [`CREDENTIALS.cff` file](https://citation-file-format.github.io/) in your repository.
+a [`CREDENTIALS.cff` file](https://citation-file-format.github.io/) in your repository.
 
 ### 6. Create a release/tag
 Commit all required files and create a release with an associated [release tag](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release)
 
 ### 7. Upload to the Workflow Store
 
-1. Login to the [workflow Store](https://workflows.material-digital.de/)
+1. Login to the [workflow Store](https://workflows.material-digital.de/) (via the button in the top right)
 2. [Upload your workflow](https://workflows.material-digital.de/upload_workflow/)
 
-Detailed instructions including information on how to add private repositories are provided in the [upload workflow section]()
+Detailed instructions including information on how to add private repositories are provided in the [upload workflow section](pages/detailed_instructions/upload/).

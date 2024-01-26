@@ -8,7 +8,7 @@ grand_parent: Contributor QuickStart Guide
 
 ## Package Your Code:
 
-Create a `setup.py` file for packaging your code. Include necessary metadata like name, version, author, and dependencies. Example:
+Create a `setup.py` file for packaging your code. Include necessary metadata like name, [version](../versioning), [author](/workflow-store/#5-add-citation-info-optional), and [dependencies](../python_environments). Example:
 
 ```python
 from setuptools import setup, find_packages

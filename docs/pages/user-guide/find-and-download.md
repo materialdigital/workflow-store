@@ -5,22 +5,22 @@ nav_order: 1
 parent: User Guide
 ---
 
+# Find and Download Workflows
 
-### Login
-- log in using your material-digital account
+## Login
+- log in [via the button in the top right](https://workflows.material-digital.de) using your material-digital account
 
-### Find and download workflows
-#### Using the website's UI
+## Using the Website
 - browse the inventory or use the search feature
 - select a workflow you are interested in. *Note that each workflow requires one of the workflow environments supported by the PMD: pyiron or simstack*
 - Click on download. You will recieve a zip-archive. Unpack it to your preferred destination.
 
-#### Using the API
+## Using the API
 - make sure you are logged in
 - click on 'User details' or navigate your browser to [https://workflows.material-digital.de/auth/user_details](https://workflows.material-digital.de/auth/user_details)
 - click on 'Generate token' or directly navigate to [https://workflows.material-digital.de/get-token](https://workflows.material-digital.de/get-token) in your browser
 
-##### Get all workflows
+### Get All Workflows
 **Bash**
 ```bash
 curl  -X GET \
@@ -55,7 +55,7 @@ Result:
 ]
 ```
 
-##### Download a single workflow
+### Download a Single Workflow
 **Bash**
 ```bash
 curl  -X GET \
